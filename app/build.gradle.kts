@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.aguassulposvenda"
+    namespace = "com.aguasul.posvenda"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,13 +11,17 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.aguassulposvenda"
+        applicationId = "com.aguasul.posvenda"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding = true
     }
 
     buildTypes {
@@ -41,6 +45,20 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+    // Jetpack DataStore Preferences
+    implementation(libs.androidx.datastore.preferences)
+
+    // Lifecycle & ViewModel
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+
+    // Kotlinx Coroutines
+    implementation(libs.kotlinx.coroutines.android)
+
+    // Gson Serialization
+    implementation(libs.gson)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
