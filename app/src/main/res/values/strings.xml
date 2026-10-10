@@ -1,3 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AguasSulPosVenda</string>
+    <string name="app_name">Água Sul Pós-Venda</string>
+
+    <!-- Navegação -->
+    <string name="nav_agenda">Agenda</string>
+    <string name="nav_clientes">Clientes</string>
+
+    <!-- Agenda de Visitas (US01) -->
+    <string name="titulo_agenda">Agenda do Dia</string>
+    <string name="subtitulo_agenda">Atendimentos Técnicos Agendados</string>
+    <string name="agenda_vazia">Nenhum atendimento agendado para hoje.</string>
+    <string name="status_pendente">Pendente</string>
+    <string name="status_concluida">Concluída</string>
+    <string name="toque_para_atender">Toque para preencher relatório</string>
+
+    <!-- Lista de Clientes (US02) -->
+    <string name="titulo_clientes">Carteira de Clientes</string>
+    <string name="hint_buscar_cliente">Buscar cliente por nome...</string>
+    <string name="clientes_vazio">Nenhum cliente encontrado.</string>
+    <string name="alerta_reclamacao_label">Reclamação Pendente</string>
+
+    <!-- Confirmação de Registro (US05) -->
+    <string name="titulo_confirmacao">Atendimento Registrado com Sucesso!</string>
+    <string name="subtitulo_confirmacao">Os dados foram salvos e sincronizados com a carteira de pós-venda da Água Sul.</string>
+    <string name="resumo_atendimento_header">Resumo do Atendimento</string>
+    <string name="resumo_cliente_label">Cliente: %1$s</string>
+    <string name="resumo_tipo_label">Tipo: %1$s</string>
+    <string name="resumo_data_hora_label">Data/Hora: %1$s</string>
+    <string name="resumo_status_visita">Status da Visita: Concluída</string>
+    <string name="resumo_condicao_label">Condição: %1$s</string>
+    <string name="btn_voltar_agenda">Voltar para a Agenda</string>
+    <string name="cliente_nao_informado">Cliente não informado</string>
+    <string name="tipo_nao_informado">Atendimento Técnico</string>
+    <string name="data_hora_nao_informada">Data/hora não informada</string>
+
+    <!-- Formulário Técnico de Campo (US04) -->
+    <string name="titulo_formulario">Relatório de Atendimento</string>
+    <string name="titulo_contexto_visita">Dados da Visita Agendada</string>
+    <string name="label_contexto_cliente">Cliente</string>
+    <string name="label_contexto_data_horario">Data e Horário</string>
+    <string name="label_contexto_tipo">Tipo Agendado</string>
+    <string name="label_tipo_atendimento">Tipo de Atendimento Realizado</string>
+    <string name="tipo_preventiva">Preventiva</string>
+    <string name="tipo_corretiva">Corretiva</string>
+    <string name="tipo_troca_filtro">Troca de Filtro/Refil</string>
+    <string name="tipo_treinamento">Treinamento</string>
+    <string name="label_condicao_equipamento">Condição do Equipamento</string>
+    <string name="condicao_normal">Operando Normal</string>
+    <string name="condicao_restricao">Operando com Restrição</string>
+    <string name="condicao_inoperante">Inoperante</string>
+    <string name="label_parecer_tecnico">Parecer Técnico / Observações *</string>
+    <string name="hint_parecer_tecnico">Descreva o serviço realizado, peças substituídas ou observações técnicas...</string>
+    <string name="label_reclamacao">Houve Reclamação Registrada?</string>
+    <string name="desc_reclamacao">Ative esta opção caso o cliente tenha manifestado queixas ou insatisfações durante o atendimento.</string>
+    <string name="btn_registrar_atendimento">Registrar Atendimento</string>
+    <string name="erro_parecer_obrigatorio">O parecer técnico é obrigatório.</string>
+    <string name="erro_condicao_obrigatoria">Selecione a condição do equipamento.</string>
+    <string name="erro_tipo_obrigatorio">Selecione o tipo de atendimento.</string>
+    <string name="msg_salvando_atendimento">Registrando atendimento...</string>
 </resources>

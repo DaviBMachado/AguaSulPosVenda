@@ -2,4 +2,29 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Paleta Água Sul -->
+    <color name="primary">#006699</color>
+    <color name="primary_variant">#004C73</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#D4E8FC</color>
+    <color name="on_primary_container">#001D33</color>
+
+    <color name="secondary">#00796B</color>
+    <color name="background">#F4F6F9</color>
+    <color name="surface">#FFFFFF</color>
+
+    <color name="text_primary">#1C1B1F</color>
+    <color name="text_secondary">#49454F</color>
+    <color name="text_tertiary">#79747E</color>
+    <color name="divider">#E0E0E0</color>
+
+    <!-- Chips e Badges de Status -->
+    <color name="status_pendente_bg">#FFF3CD</color>
+    <color name="status_pendente_text">#856404</color>
+    <color name="status_concluida_bg">#D4EDDA</color>
+    <color name="status_concluida_text">#155724</color>
+
+    <color name="alerta_reclamacao_bg">#F8D7DA</color>
+    <color name="alerta_reclamacao_text">#721C24</color>
 </resources>
