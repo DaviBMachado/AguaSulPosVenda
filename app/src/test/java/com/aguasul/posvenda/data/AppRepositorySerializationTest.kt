@@ -1,9 +1,9 @@
-package com.aguasul.posvenda.data
+package com.Aquasul.posvenda.data
 
-import com.aguasul.posvenda.domain.model.Atendimento
-import com.aguasul.posvenda.domain.model.Cliente
-import com.aguasul.posvenda.domain.model.MockDataProvider
-import com.aguasul.posvenda.domain.model.Visita
+import com.Aquasul.posvenda.domain.model.Atendimento
+import com.Aquasul.posvenda.domain.model.Cliente
+import com.Aquasul.posvenda.domain.model.MockDataProvider
+import com.Aquasul.posvenda.domain.model.Visita
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import org.junit.Assert.assertEquals

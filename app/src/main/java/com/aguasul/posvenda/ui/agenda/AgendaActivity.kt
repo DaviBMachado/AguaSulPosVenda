@@ -1,4 +1,4 @@
-package com.aguasul.posvenda.ui.agenda
+package com.Aquasul.posvenda.ui.agenda
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,11 +9,11 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.aguasul.posvenda.R
-import com.aguasul.posvenda.databinding.ActivityAgendaBinding
-import com.aguasul.posvenda.domain.model.Visita
-import com.aguasul.posvenda.ui.clientes.ClientesActivity
-import com.aguasul.posvenda.ui.formulario.FormularioAtendimentoActivity
+import com.Aquasul.posvenda.R
+import com.Aquasul.posvenda.databinding.ActivityAgendaBinding
+import com.Aquasul.posvenda.domain.model.Visita
+import com.Aquasul.posvenda.ui.clientes.ClientesActivity
+import com.Aquasul.posvenda.ui.formulario.FormularioAtendimentoActivity
 import kotlinx.coroutines.launch
 
 class AgendaActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.aguasul.posvenda
+package com.Aquasul.posvenda
 
 import org.junit.Test
 import org.junit.Assert.*

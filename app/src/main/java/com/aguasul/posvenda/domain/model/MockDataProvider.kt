@@ -1,8 +1,8 @@
-package com.aguasul.posvenda.domain.model
+package com.Aquasul.posvenda.domain.model
 
 /**
  * Fornece dados simulados (mocks) realistas para a carteira de clientes
- * e a agenda de visitas diárias da Água Sul.
+ * e a agenda de visitas diárias da Aqua Sul.
  */
 object MockDataProvider {
 
@@ -17,7 +17,7 @@ object MockDataProvider {
         ),
         Cliente(
             id = "cli_002",
-            nome = "Condomínio Reserva das Águas",
+            nome = "Condomínio Reserva das Aquas",
             contato = "(11) 97654-3210 - Síndico Roberto",
             andamentoUso = "Regular",
             usabilidade = "Boa",
@@ -59,7 +59,7 @@ object MockDataProvider {
             andamentoUso = "Intensivo",
             usabilidade = "Boa",
             reclamacoes = listOf(
-                "Gosto alterado na água do bebedouro 2"
+                "Gosto alterado na Aqua do bebedouro 2"
             )
         )
     )
@@ -76,7 +76,7 @@ object MockDataProvider {
         Visita(
             id = "vis_002",
             clienteId = "cli_002",
-            clienteNome = "Condomínio Reserva das Águas",
+            clienteNome = "Condomínio Reserva das Aquas",
             dataHorario = "Hoje às 10:45",
             tipo = Visita.TIPO_CORRETIVA,
             status = Visita.STATUS_PENDENTE

@@ -1,8 +1,8 @@
-package com.aguasul.posvenda.domain
+package com.Aquasul.posvenda.domain
 
-import com.aguasul.posvenda.domain.model.Cliente
-import com.aguasul.posvenda.domain.model.MockDataProvider
-import com.aguasul.posvenda.domain.model.Visita
+import com.Aquasul.posvenda.domain.model.Cliente
+import com.Aquasul.posvenda.domain.model.MockDataProvider
+import com.Aquasul.posvenda.domain.model.Visita
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
@@ -38,7 +38,7 @@ class DomainModelTest {
             contato = "456",
             andamentoUso = "Crítico",
             usabilidade = "Ruim",
-            reclamacoes = listOf("Pressão da água instável")
+            reclamacoes = listOf("Pressão da Aqua instável")
         )
 
         assertFalse(clienteSemReclamacao.possuiReclamacoes())

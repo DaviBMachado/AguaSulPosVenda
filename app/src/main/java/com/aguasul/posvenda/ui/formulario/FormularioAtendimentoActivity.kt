@@ -1,4 +1,4 @@
-package com.aguasul.posvenda.ui.formulario
+package com.Aquasul.posvenda.ui.formulario
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,12 +10,12 @@ import androidx.core.widget.doOnTextChanged
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import com.aguasul.posvenda.R
-import com.aguasul.posvenda.databinding.ActivityFormularioAtendimentoBinding
-import com.aguasul.posvenda.domain.model.Atendimento
-import com.aguasul.posvenda.domain.model.Visita
-import com.aguasul.posvenda.ui.agenda.AgendaActivity
-import com.aguasul.posvenda.ui.confirmacao.ConfirmacaoActivity
+import com.Aquasul.posvenda.R
+import com.Aquasul.posvenda.databinding.ActivityFormularioAtendimentoBinding
+import com.Aquasul.posvenda.domain.model.Atendimento
+import com.Aquasul.posvenda.domain.model.Visita
+import com.Aquasul.posvenda.ui.agenda.AgendaActivity
+import com.Aquasul.posvenda.ui.confirmacao.ConfirmacaoActivity
 import kotlinx.coroutines.launch
 
 class FormularioAtendimentoActivity : AppCompatActivity() {

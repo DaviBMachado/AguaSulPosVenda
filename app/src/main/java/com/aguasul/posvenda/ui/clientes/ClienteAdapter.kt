@@ -1,4 +1,4 @@
-package com.aguasul.posvenda.ui.clientes
+package com.Aquasul.posvenda.ui.clientes
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.aguasul.posvenda.databinding.ItemClienteBinding
-import com.aguasul.posvenda.domain.model.Cliente
+import com.Aquasul.posvenda.databinding.ItemClienteBinding
+import com.Aquasul.posvenda.domain.model.Cliente
 
 class ClienteAdapter(
     private val onClienteClick: (Cliente) -> Unit

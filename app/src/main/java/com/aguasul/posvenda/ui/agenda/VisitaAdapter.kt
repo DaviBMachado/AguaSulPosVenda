@@ -1,4 +1,4 @@
-package com.aguasul.posvenda.ui.agenda
+package com.Aquasul.posvenda.ui.agenda
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,9 +7,9 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.aguasul.posvenda.R
-import com.aguasul.posvenda.databinding.ItemVisitaBinding
-import com.aguasul.posvenda.domain.model.Visita
+import com.Aquasul.posvenda.R
+import com.Aquasul.posvenda.databinding.ItemVisitaBinding
+import com.Aquasul.posvenda.domain.model.Visita
 
 class VisitaAdapter(
     private val onVisitaClick: (Visita) -> Unit

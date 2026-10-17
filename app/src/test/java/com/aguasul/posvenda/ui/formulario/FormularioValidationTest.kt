@@ -1,6 +1,6 @@
-package com.aguasul.posvenda.ui.formulario
+package com.Aquasul.posvenda.ui.formulario
 
-import com.aguasul.posvenda.domain.model.Atendimento
+import com.Aquasul.posvenda.domain.model.Atendimento
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue

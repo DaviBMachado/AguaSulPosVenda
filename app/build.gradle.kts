@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.aguasul.posvenda"
+    namespace = "com.Aquasul.posvenda"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.aguasul.posvenda"
+        applicationId = "com.Aquasul.posvenda"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

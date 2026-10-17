@@ -1,4 +1,4 @@
-package com.aguasul.posvenda.data.repository
+package com.Aquasul.posvenda.data.repository
 
 import android.content.Context
 import androidx.datastore.core.DataStore
@@ -7,10 +7,10 @@ import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.emptyPreferences
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
-import com.aguasul.posvenda.domain.model.Atendimento
-import com.aguasul.posvenda.domain.model.Cliente
-import com.aguasul.posvenda.domain.model.MockDataProvider
-import com.aguasul.posvenda.domain.model.Visita
+import com.Aquasul.posvenda.domain.model.Atendimento
+import com.Aquasul.posvenda.domain.model.Cliente
+import com.Aquasul.posvenda.domain.model.MockDataProvider
+import com.Aquasul.posvenda.domain.model.Visita
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.flow.Flow
@@ -19,7 +19,7 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import java.io.IOException
 
-private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "aguasul_posvenda_prefs")
+private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "Aquasul_posvenda_prefs")
 
 /**
  * Repositório central de dados do aplicativo.

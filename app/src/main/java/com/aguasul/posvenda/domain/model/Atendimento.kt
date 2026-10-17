@@ -1,4 +1,4 @@
-package com.aguasul.posvenda.domain.model
+package com.Aquasul.posvenda.domain.model
 
 /**
  * Representa o registro do relatório técnico de atendimento preenchido em campo.

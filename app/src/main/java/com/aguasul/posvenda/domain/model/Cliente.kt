@@ -1,7 +1,7 @@
-package com.aguasul.posvenda.domain.model
+package com.Aquasul.posvenda.domain.model
 
 /**
- * Representa um cliente da carteira de pós-venda da Água Sul.
+ * Representa um cliente da carteira de pós-venda da Aqua Sul.
  */
 data class Cliente(
     val id: String,

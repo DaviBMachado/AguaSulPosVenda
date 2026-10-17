@@ -1,4 +1,4 @@
-package com.aguasul.posvenda.ui.clientes
+package com.Aquasul.posvenda.ui.clientes
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,11 +10,11 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.aguasul.posvenda.R
-import com.aguasul.posvenda.databinding.ActivityClientesBinding
-import com.aguasul.posvenda.domain.model.Cliente
-import com.aguasul.posvenda.ui.agenda.AgendaActivity
-import com.aguasul.posvenda.ui.perfil.PerfilClienteActivity
+import com.Aquasul.posvenda.R
+import com.Aquasul.posvenda.databinding.ActivityClientesBinding
+import com.Aquasul.posvenda.domain.model.Cliente
+import com.Aquasul.posvenda.ui.agenda.AgendaActivity
+import com.Aquasul.posvenda.ui.perfil.PerfilClienteActivity
 import kotlinx.coroutines.launch
 
 class ClientesActivity : AppCompatActivity() {

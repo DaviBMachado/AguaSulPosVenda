@@ -1,7 +1,7 @@
-package com.aguasul.posvenda
+package com.Aquasul.posvenda
 
 import android.app.Application
-import com.aguasul.posvenda.data.repository.AppRepository
+import com.Aquasul.posvenda.data.repository.AppRepository
 
 /**
  * Classe de aplicação responsável pela inicialização dos componentes globais

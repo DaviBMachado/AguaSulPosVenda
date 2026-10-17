@@ -1,11 +1,11 @@
-package com.aguasul.posvenda.ui.formulario
+package com.Aquasul.posvenda.ui.formulario
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.aguasul.posvenda.PosVendaApplication
-import com.aguasul.posvenda.data.repository.AppRepository
-import com.aguasul.posvenda.domain.model.Atendimento
+import com.Aquasul.posvenda.PosVendaApplication
+import com.Aquasul.posvenda.data.repository.AppRepository
+import com.Aquasul.posvenda.domain.model.Atendimento
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

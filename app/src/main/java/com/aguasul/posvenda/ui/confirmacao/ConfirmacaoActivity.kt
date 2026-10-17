@@ -1,4 +1,4 @@
-package com.aguasul.posvenda.ui.confirmacao
+package com.Aquasul.posvenda.ui.confirmacao
 
 import android.content.Context
 import android.content.Intent
@@ -6,9 +6,9 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
-import com.aguasul.posvenda.R
-import com.aguasul.posvenda.databinding.ActivityConfirmacaoBinding
-import com.aguasul.posvenda.ui.agenda.AgendaActivity
+import com.Aquasul.posvenda.R
+import com.Aquasul.posvenda.databinding.ActivityConfirmacaoBinding
+import com.Aquasul.posvenda.ui.agenda.AgendaActivity
 
 class ConfirmacaoActivity : AppCompatActivity() {
 
@@ -20,24 +20,24 @@ class ConfirmacaoActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val clienteNome = intent.getStringExtra(EXTRA_CLIENTE_NOME)
-            ?: intent.getStringExtra("com.aguasul.posvenda.CLIENTE_NOME")
-            ?: intent.getStringExtra("com.aguasul.posvenda.extra.CONFIRM_CLIENTE_NOME")
+            ?: intent.getStringExtra("com.Aquasul.posvenda.CLIENTE_NOME")
+            ?: intent.getStringExtra("com.Aquasul.posvenda.extra.CONFIRM_CLIENTE_NOME")
             ?: getString(R.string.cliente_nao_informado)
 
         val tipoAtendimento = intent.getStringExtra(EXTRA_TIPO_ATENDIMENTO)
-            ?: intent.getStringExtra("com.aguasul.posvenda.TIPO_ATENDIMENTO")
-            ?: intent.getStringExtra("com.aguasul.posvenda.extra.CONFIRM_TIPO")
+            ?: intent.getStringExtra("com.Aquasul.posvenda.TIPO_ATENDIMENTO")
+            ?: intent.getStringExtra("com.Aquasul.posvenda.extra.CONFIRM_TIPO")
             ?: getString(R.string.tipo_nao_informado)
 
         val dataHora = intent.getStringExtra(EXTRA_DATA_HORA)
-            ?: intent.getStringExtra("com.aguasul.posvenda.DATA_HORA")
-            ?: intent.getStringExtra("com.aguasul.posvenda.extra.CONFIRM_DATA_HORA")
+            ?: intent.getStringExtra("com.Aquasul.posvenda.DATA_HORA")
+            ?: intent.getStringExtra("com.Aquasul.posvenda.extra.CONFIRM_DATA_HORA")
             ?: getString(R.string.data_hora_nao_informada)
 
         val condicao = intent.getStringExtra(EXTRA_CONDICAO)
             ?: intent.getStringExtra(EXTRA_CONDICAO_EQUIPAMENTO)
-            ?: intent.getStringExtra("com.aguasul.posvenda.CONDICAO_EQUIPAMENTO")
-            ?: intent.getStringExtra("com.aguasul.posvenda.extra.CONFIRM_CONDICAO")
+            ?: intent.getStringExtra("com.Aquasul.posvenda.CONDICAO_EQUIPAMENTO")
+            ?: intent.getStringExtra("com.Aquasul.posvenda.extra.CONFIRM_CONDICAO")
 
         binding.tvResumoCliente.text = getString(R.string.resumo_cliente_label, clienteNome)
         binding.tvResumoTipo.text = getString(R.string.resumo_tipo_label, tipoAtendimento)

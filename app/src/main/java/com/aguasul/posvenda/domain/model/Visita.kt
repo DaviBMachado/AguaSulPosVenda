@@ -1,4 +1,4 @@
-package com.aguasul.posvenda.domain.model
+package com.Aquasul.posvenda.domain.model
 
 /**
  * Representa um agendamento de visita técnica de pós-venda.

@@ -1,11 +1,11 @@
-package com.aguasul.posvenda
+package com.Aquasul.posvenda
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.aguasul.posvenda.databinding.ActivityMainBinding
+import com.Aquasul.posvenda.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

@@ -1,10 +1,10 @@
-package com.aguasul.posvenda.ui.clientes
+package com.Aquasul.posvenda.ui.clientes
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.aguasul.posvenda.PosVendaApplication
-import com.aguasul.posvenda.domain.model.Cliente
+import com.Aquasul.posvenda.PosVendaApplication
+import com.Aquasul.posvenda.domain.model.Cliente
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

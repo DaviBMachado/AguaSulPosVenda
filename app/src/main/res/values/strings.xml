@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Água Sul Pós-Venda</string>
+    <string name="app_name">Aqua Sul Pós-Venda</string>
 
     <!-- Navegação -->
     <string name="nav_agenda">Agenda</string>
@@ -22,7 +22,7 @@
 
     <!-- Confirmação de Registro (US05) -->
     <string name="titulo_confirmacao">Atendimento Registrado com Sucesso!</string>
-    <string name="subtitulo_confirmacao">Os dados foram salvos e sincronizados com a carteira de pós-venda da Água Sul.</string>
+    <string name="subtitulo_confirmacao">Os dados foram salvos e sincronizados com a carteira de pós-venda da Aqua Sul.</string>
     <string name="resumo_atendimento_header">Resumo do Atendimento</string>
     <string name="resumo_cliente_label">Cliente: %1$s</string>
     <string name="resumo_tipo_label">Tipo: %1$s</string>
