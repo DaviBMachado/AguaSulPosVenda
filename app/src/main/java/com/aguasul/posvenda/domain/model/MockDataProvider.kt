@@ -98,4 +98,99 @@ object MockDataProvider {
             status = Visita.STATUS_PENDENTE
         )
     )
+
+    val usuariosIniciais: List<Usuario> = listOf(
+        Usuario(
+            email = "tecnico@aquasul.com",
+            senha = "1234",
+            perfil = TipoPerfil.TECNICO,
+            clienteId = null,
+            nomeExibicao = "Técnico Especialista"
+        ),
+        Usuario(
+            email = "hospital@saolucas.com",
+            senha = "1234",
+            perfil = TipoPerfil.CLIENTE,
+            clienteId = "cli_001",
+            nomeExibicao = "Hospital São Lucas"
+        ),
+        Usuario(
+            email = "reserva@aguas.com",
+            senha = "1234",
+            perfil = TipoPerfil.CLIENTE,
+            clienteId = "cli_002",
+            nomeExibicao = "Condomínio Reserva das Águas"
+        ),
+        Usuario(
+            email = "escola@monteiro.com",
+            senha = "1234",
+            perfil = TipoPerfil.CLIENTE,
+            clienteId = "cli_003",
+            nomeExibicao = "Escola Municipal Monteiro Lobato"
+        ),
+        Usuario(
+            email = "contato@ferroaco.com",
+            senha = "1234",
+            perfil = TipoPerfil.CLIENTE,
+            clienteId = "cli_004",
+            nomeExibicao = "Indústria Metalúrgica FerroAço"
+        ),
+        Usuario(
+            email = "restaurante@sabornatural.com",
+            senha = "1234",
+            perfil = TipoPerfil.CLIENTE,
+            clienteId = "cli_005",
+            nomeExibicao = "Restaurante Sabor Natural"
+        ),
+        Usuario(
+            email = "academia@corpovida.com",
+            senha = "1234",
+            perfil = TipoPerfil.CLIENTE,
+            clienteId = "cli_006",
+            nomeExibicao = "Academia Corpo & Vida"
+        )
+    )
+
+    val reclamacoesIniciais: List<Reclamacao> = listOf(
+        Reclamacao(
+            id = "rec_001",
+            clienteId = "cli_002",
+            clienteNome = "Condomínio Reserva das Águas",
+            dataAbertura = "05/10/2026 09:15",
+            descricao = "Baixa vazão no bloco B relatada após limpeza periódica dos reservatórios.",
+            status = StatusReclamacao.EM_ANDAMENTO,
+            resolucaoTecnica = "Verificação de pressão realizada. Agendada troca de válvula reguladora.",
+            origem = OrigemReclamacao.CLIENTE
+        ),
+        Reclamacao(
+            id = "rec_002",
+            clienteId = "cli_002",
+            clienteNome = "Condomínio Reserva das Águas",
+            dataAbertura = "06/10/2026 14:30",
+            descricao = "Ruído intermitente na bomba de recalque durante horários de pico.",
+            status = StatusReclamacao.ABERTA,
+            resolucaoTecnica = null,
+            origem = OrigemReclamacao.CLIENTE
+        ),
+        Reclamacao(
+            id = "rec_003",
+            clienteId = "cli_004",
+            clienteNome = "Indústria Metalúrgica FerroAço",
+            dataAbertura = "04/10/2026 11:00",
+            descricao = "Necessidade de reposição emergencial de refil desmineralizador na linha de corte.",
+            status = StatusReclamacao.ABERTA,
+            resolucaoTecnica = null,
+            origem = OrigemReclamacao.VISITA_TECNICA
+        ),
+        Reclamacao(
+            id = "rec_004",
+            clienteId = "cli_006",
+            clienteNome = "Academia Corpo & Vida",
+            dataAbertura = "01/10/2026 16:45",
+            descricao = "Gosto alterado na água do bebedouro 2 próximo à área de musculação.",
+            status = StatusReclamacao.RESOLVIDA,
+            resolucaoTecnica = "Substituição completa do elemento filtrante de carvão ativado e sanitização do duto.",
+            origem = OrigemReclamacao.CLIENTE
+        )
+    )
 }

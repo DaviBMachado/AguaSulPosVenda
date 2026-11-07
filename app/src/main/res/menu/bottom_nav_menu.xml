@@ -8,4 +8,12 @@
         android:id="@+id/nav_clientes"
         android:icon="@drawable/ic_people"
         android:title="@string/nav_clientes" />
+    <item
+        android:id="@+id/nav_reclamacoes"
+        android:icon="@drawable/ic_warning"
+        android:title="@string/nav_reclamacoes" />
+    <item
+        android:id="@+id/nav_relatorios"
+        android:icon="@drawable/ic_chart"
+        android:title="@string/nav_relatorios" />
 </menu>

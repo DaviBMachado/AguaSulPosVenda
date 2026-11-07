@@ -1,7 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Base application theme para modo noturno. -->
     <style name="Base.Theme.AguasSulPosVenda" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Altura global das Toolbars / ActionBars -->
         <item name="actionBarSize">80dp</item>
+
+        <item name="colorPrimary">@color/secondary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
 </resources>

@@ -3,28 +3,45 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- Paleta Água Sul -->
-    <color name="primary">#006699</color>
-    <color name="primary_variant">#004C73</color>
+    <!-- Paleta Oficial Água Sul -->
+    <!-- #142B4A: Azul marinho profundo / Headers / Toolbars / Marca -->
+    <color name="primary">#142B4A</color>
+    <color name="primary_variant">#0B1E36</color>
     <color name="on_primary">#FFFFFF</color>
-    <color name="primary_container">#D4E8FC</color>
-    <color name="on_primary_container">#001D33</color>
+    <color name="primary_container">#E2EDF8</color>
+    <color name="on_primary_container">#142B4A</color>
 
-    <color name="secondary">#00796B</color>
-    <color name="background">#F4F6F9</color>
+    <!-- #2563A6: Azul real vibrante / Ações primárias / Links / Interativo -->
+    <color name="secondary">#2563A6</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#D7E6F8</color>
+    <color name="on_secondary_container">#0E2744</color>
+
+    <!-- #FF9800: Laranja vibrante / Destaque / CTA / Pendências -->
+    <color name="accent">#FF9800</color>
+    <color name="on_accent">#FFFFFF</color>
+
+    <!-- #F4F6F8: Fundo neutro limpo -->
+    <color name="background">#F4F6F8</color>
+
+    <!-- #FFFFFF: Superfícies e Cards -->
     <color name="surface">#FFFFFF</color>
 
-    <color name="text_primary">#1C1B1F</color>
-    <color name="text_secondary">#49454F</color>
-    <color name="text_tertiary">#79747E</color>
-    <color name="divider">#E0E0E0</color>
+    <!-- Tipografia e Divisores -->
+    <color name="text_primary">#142B4A</color>
+    <color name="text_secondary">#4A586E</color>
+    <color name="text_tertiary">#8897A8</color>
+    <color name="divider">#E2E8F0</color>
 
     <!-- Chips e Badges de Status -->
-    <color name="status_pendente_bg">#FFF3CD</color>
-    <color name="status_pendente_text">#856404</color>
-    <color name="status_concluida_bg">#D4EDDA</color>
-    <color name="status_concluida_text">#155724</color>
+    <color name="status_pendente_bg">#FFF3E0</color>
+    <color name="status_pendente_text">#E65100</color>
+    <color name="status_concluida_bg">#E6F7EC</color>
+    <color name="status_concluida_text">#1B663E</color>
 
-    <color name="alerta_reclamacao_bg">#F8D7DA</color>
-    <color name="alerta_reclamacao_text">#721C24</color>
+    <color name="status_em_andamento_bg">#E6F0FA</color>
+    <color name="status_em_andamento_text">#2563A6</color>
+
+    <color name="alerta_reclamacao_bg">#FEECEB</color>
+    <color name="alerta_reclamacao_text">#B71C1C</color>
 </resources>

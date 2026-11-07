@@ -2,6 +2,8 @@ package com.aguasul.posvenda.ui.clientes
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -10,11 +12,15 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.aguasul.posvenda.PosVendaApplication
 import com.aguasul.posvenda.R
 import com.aguasul.posvenda.databinding.ActivityClientesBinding
 import com.aguasul.posvenda.domain.model.Cliente
 import com.aguasul.posvenda.ui.agenda.AgendaActivity
+import com.aguasul.posvenda.ui.login.LoginActivity
 import com.aguasul.posvenda.ui.perfil.PerfilClienteActivity
+import com.aguasul.posvenda.ui.reclamacoes.ReclamacoesActivity
+import com.aguasul.posvenda.ui.relatorios.RelatoriosActivity
 import kotlinx.coroutines.launch
 
 class ClientesActivity : AppCompatActivity() {
@@ -28,10 +34,33 @@ class ClientesActivity : AppCompatActivity() {
         binding = ActivityClientesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setSupportActionBar(binding.toolbarClientes)
+
         setupRecyclerView()
         setupBusca()
         setupBottomNavigation()
         observeUiState()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.top_app_bar_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return if (item.itemId == R.id.action_logout) {
+            lifecycleScope.launch {
+                (application as PosVendaApplication).repository.fazerLogout()
+                val intent = Intent(this@ClientesActivity, LoginActivity::class.java).apply {
+                    flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                }
+                startActivity(intent)
+                finish()
+            }
+            true
+        } else {
+            super.onOptionsItemSelected(item)
+        }
     }
 
     override fun onResume() {
@@ -64,16 +93,36 @@ class ClientesActivity : AppCompatActivity() {
                         flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
                     }
                     startActivity(intent)
-                    if (android.os.Build.VERSION.SDK_INT >= 34) {
-                        overrideActivityTransition(OVERRIDE_TRANSITION_OPEN, 0, 0)
-                    } else {
-                        @Suppress("DEPRECATION")
-                        overridePendingTransition(0, 0)
+                    transicaoSuave()
+                    true
+                }
+                R.id.nav_reclamacoes -> {
+                    val intent = Intent(this, ReclamacoesActivity::class.java).apply {
+                        flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
                     }
+                    startActivity(intent)
+                    transicaoSuave()
+                    true
+                }
+                R.id.nav_relatorios -> {
+                    val intent = Intent(this, RelatoriosActivity::class.java).apply {
+                        flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
+                    }
+                    startActivity(intent)
+                    transicaoSuave()
                     true
                 }
                 else -> false
             }
+        }
+    }
+
+    private fun transicaoSuave() {
+        if (android.os.Build.VERSION.SDK_INT >= 34) {
+            overrideActivityTransition(OVERRIDE_TRANSITION_OPEN, 0, 0)
+        } else {
+            @Suppress("DEPRECATION")
+            overridePendingTransition(0, 0)
         }
     }
 

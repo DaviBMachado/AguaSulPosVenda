@@ -2,9 +2,15 @@ package com.aguasul.posvenda.domain
 
 import com.aguasul.posvenda.domain.model.Cliente
 import com.aguasul.posvenda.domain.model.MockDataProvider
+import com.aguasul.posvenda.domain.model.OrigemReclamacao
+import com.aguasul.posvenda.domain.model.Reclamacao
+import com.aguasul.posvenda.domain.model.SessaoUsuario
+import com.aguasul.posvenda.domain.model.StatusReclamacao
+import com.aguasul.posvenda.domain.model.TipoPerfil
 import com.aguasul.posvenda.domain.model.Visita
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
@@ -58,6 +64,65 @@ class DomainModelTest {
         visitas.forEach { visita ->
             assertTrue("Visita ${visita.id} deve apontar para um cliente existente", clienteIds.contains(visita.clienteId))
             assertEquals(Visita.STATUS_PENDENTE, visita.status)
+        }
+    }
+
+    @Test
+    fun `reclamacao deve verificar estados de ciclo de vida corretamente`() {
+        val recAberta = Reclamacao(
+            id = "r1",
+            clienteId = "c1",
+            clienteNome = "Cliente 1",
+            dataAbertura = "01/10/2026",
+            descricao = "Falha de vazao",
+            status = StatusReclamacao.ABERTA,
+            origem = OrigemReclamacao.CLIENTE
+        )
+        val recEmAndamento = recAberta.copy(status = StatusReclamacao.EM_ANDAMENTO)
+        val recResolvida = recAberta.copy(status = StatusReclamacao.RESOLVIDA, resolucaoTecnica = "Ajustado")
+
+        assertTrue(recAberta.isAberta())
+        assertFalse(recAberta.isEmAndamento())
+        assertFalse(recAberta.isResolvida())
+
+        assertTrue(recEmAndamento.isEmAndamento())
+        assertTrue(recResolvida.isResolvida())
+        assertNotNull(recResolvida.resolucaoTecnica)
+    }
+
+    @Test
+    fun `sessaoUsuario deve identificar perfil de acesso corretamente`() {
+        val sessaoTecnico = SessaoUsuario(
+            perfil = TipoPerfil.TECNICO,
+            nomeExibicao = "Técnico"
+        )
+        val sessaoCliente = SessaoUsuario(
+            perfil = TipoPerfil.CLIENTE,
+            clienteId = "c1",
+            nomeExibicao = "Cliente"
+        )
+
+        assertTrue(sessaoTecnico.isTecnico)
+        assertFalse(sessaoTecnico.isCliente)
+
+        assertTrue(sessaoCliente.isCliente)
+        assertFalse(sessaoCliente.isTecnico)
+        assertEquals("c1", sessaoCliente.clienteId)
+    }
+
+    @Test
+    fun `mockDataProvider deve conter usuarios e reclamacoes consistentes`() {
+        val usuarios = MockDataProvider.usuariosIniciais
+        val reclamacoes = MockDataProvider.reclamacoesIniciais
+        val clientes = MockDataProvider.clientesIniciais
+        val clienteIds = clientes.map { it.id }.toSet()
+
+        assertTrue(usuarios.any { it.perfil == TipoPerfil.TECNICO && it.email == "tecnico@aquasul.com" })
+        assertEquals(4, reclamacoes.size)
+
+        reclamacoes.forEach { rec ->
+            assertTrue("Reclamação ${rec.id} deve estar vinculada a um cliente existente", clienteIds.contains(rec.clienteId))
+            assertTrue(rec.descricao.isNotBlank())
         }
     }
 }

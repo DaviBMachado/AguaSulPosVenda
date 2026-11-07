@@ -5,6 +5,72 @@
     <!-- Navegação -->
     <string name="nav_agenda">Agenda</string>
     <string name="nav_clientes">Clientes</string>
+    <string name="nav_reclamacoes">Reclamações</string>
+    <string name="nav_relatorios">Relatórios</string>
+    <string name="action_logout">Sair</string>
+
+    <!-- Autenticação / Login (US08 / Task 003) -->
+    <string name="titulo_login">Água Sul</string>
+    <string name="subtitulo_login">Gestão de Pós-Venda e Relacionamento</string>
+    <string name="label_email">E-mail</string>
+    <string name="hint_email">seu.email@aquasul.com</string>
+    <string name="label_senha">Senha</string>
+    <string name="hint_senha">••••••••</string>
+    <string name="btn_entrar">Entrar no Sistema</string>
+    <string name="titulo_demo_acesso">Acesso Rápido de Demonstração</string>
+    <string name="desc_demo_acesso">Selecione um perfil para login imediato com dados simulados:</string>
+    <string name="btn_demo_tecnico">Entrar como Técnico</string>
+    <string name="hint_demo_cliente">Entrar como Cliente...</string>
+    <string name="erro_credenciais_invalidas">Credenciais inválidas. Verifique e-mail e senha.</string>
+    <string name="erro_campos_obrigatorios">Preencha o e-mail e a senha.</string>
+
+    <!-- Gerenciamento de Reclamações (Task 005) -->
+    <string name="titulo_reclamacoes">Fila de Reclamações</string>
+    <string name="subtitulo_reclamacoes">Ocorrências abertas e histórico de suporte</string>
+    <string name="filtro_todas">Todas</string>
+    <string name="filtro_abertas">Abertas</string>
+    <string name="filtro_resolvidas">Resolvidas</string>
+    <string name="reclamacoes_vazia">Nenhuma reclamação encontrada.</string>
+    <string name="status_aberta">Aberta</string>
+    <string name="status_em_andamento">Em Andamento</string>
+    <string name="status_resolvida">Resolvida</string>
+    <string name="origem_cliente">Cliente</string>
+    <string name="origem_visita">Visita Técnica</string>
+    <string name="dialog_resolver_titulo">Resolver Reclamação</string>
+    <string name="dialog_resolver_msg">Informe o parecer técnico de resolução para encerrar esta queixa:</string>
+    <string name="hint_parecer_resolucao">Descreva as medidas adotadas para sanar a queixa...</string>
+    <string name="btn_confirmar_resolucao">Marcar como Resolvida</string>
+    <string name="btn_cancelar">Cancelar</string>
+
+    <!-- Relatórios Avançados (Task 006) -->
+    <string name="titulo_relatorios">Dashboard de Usabilidade</string>
+    <string name="subtitulo_relatorios">Indicadores da carteira e qualidade do suporte</string>
+    <string name="card_usabilidade_titulo">Distribuição de Usabilidade</string>
+    <string name="card_usabilidade_desc">Classificação de maturidade e uso dos clientes ativos</string>
+    <string name="usabilidade_alta_label">Alta / Excelente</string>
+    <string name="usabilidade_media_label">Média / Satisfatória</string>
+    <string name="usabilidade_baixa_label">Baixa / Requer Calibração</string>
+    <string name="card_eficacia_titulo">Eficácia do Pós-Venda</string>
+    <string name="taxa_resolucao_label">Taxa de Resolução de Queixas</string>
+    <string name="reclamacoes_pendentes_label">Reclamações Pendentes: %1$d</string>
+    <string name="reclamacoes_resolvidas_label">Reclamações Resolvidas: %1$d</string>
+    <string name="card_servicos_titulo">Serviços Executados</string>
+    <string name="total_visitas_label">Total de Atendimentos Agendados: %1$d</string>
+    <string name="visitas_concluidas_label">Concluídos: %1$d</string>
+    <string name="card_criticos_titulo">Clientes em Atenção Crítica</string>
+    <string name="card_criticos_desc">Clientes com ocorrências ativas que demandam suporte</string>
+    <string name="nenhum_cliente_critico">Nenhum cliente crítico no momento. Todas as queixas estão resolvidas!</string>
+
+    <!-- Área do Cliente (Task 004 / Redirecionamento de Login) -->
+    <string name="titulo_area_cliente">Portal do Cliente</string>
+    <string name="equipamento_titulo">Equipamento Contratado</string>
+    <string name="usabilidade_cliente_label">Nível de Usabilidade: %1$s</string>
+    <string name="minhas_reclamacoes_titulo">Minhas Reclamações</string>
+    <string name="historico_visitas_titulo">Histórico de Atendimentos</string>
+    <string name="nenhuma_reclamacao_cliente">Você não possui nenhuma reclamação registrada.</string>
+    <string name="nova_reclamacao_titulo">Registrar Nova Reclamação</string>
+    <string name="hint_descricao_reclamacao">Descreva o problema ou solicitação de suporte...</string>
+    <string name="btn_enviar_reclamacao">Enviar Queixa</string>
 
     <!-- Agenda de Visitas (US01) -->
     <string name="titulo_agenda">Agenda do Dia</string>

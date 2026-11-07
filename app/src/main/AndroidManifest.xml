@@ -12,9 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AguasSulPosVenda">
-        <!-- Activity Principal (Launcher) -->
+
+        <!-- Activity Principal (Launcher / Autenticação) -->
         <activity
-            android:name=".ui.agenda.AgendaActivity"
+            android:name=".ui.login.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,9 +24,24 @@
             </intent-filter>
         </activity>
 
-        <!-- Demais Activities Internas -->
+        <!-- Activities do Perfil Técnico -->
+        <activity
+            android:name=".ui.agenda.AgendaActivity"
+            android:exported="false"
+            android:launchMode="singleTop" />
+
         <activity
             android:name=".ui.clientes.ClientesActivity"
+            android:exported="false"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".ui.reclamacoes.ReclamacoesActivity"
+            android:exported="false"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".ui.relatorios.RelatoriosActivity"
             android:exported="false"
             android:launchMode="singleTop" />
 
@@ -40,6 +56,11 @@
 
         <activity
             android:name=".ui.confirmacao.ConfirmacaoActivity"
+            android:exported="false" />
+
+        <!-- Activity do Perfil Cliente -->
+        <activity
+            android:name=".ui.cliente.AreaClienteActivity"
             android:exported="false" />
 
         <activity
